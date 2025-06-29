@@ -1,4 +1,4 @@
-const User = require("../models/User_Model.js");
+const User = require("../models/user.model.js");
 const authService = require("../services/auth.service.js");
 const setCookies = require("../utils/setCookies.js"); // Cookie setting logic
 const catchAsync = require("../utils/catchAsync.js");

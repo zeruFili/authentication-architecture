@@ -1,12 +1,12 @@
 const bcrypt = require("bcryptjs");
-const User = require("../models/User_Model.js");
+const User = require("../models/user.model.js");
 const {
   sendPasswordResetEmail,
   sendResetSuccessEmail,
   sendVerificationEmail,
   sendWelcomeEmail,
 } = require("../mailtrap/emails.js");
-const generateTokens = require("../utils/generateTokens.js"); // Token generation logic
+const generateTokens = require("../utils/generateTokenAndSetCookie.js"); // Token generation logic
 const jwt = require("jsonwebtoken");
 
 const createUser = async (email, password, first_name, last_name, phone_number) => {

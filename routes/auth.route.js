@@ -10,7 +10,7 @@ const {
   updateUserProfile,
   getMyProfile,
   getAllUsers,
-} = require("../controllers/User_Controller"); // Import all required controller functions
+} = require("../controllers/auth.controller"); // Import all required controller functions
 
 const {
   signupSchema,
@@ -20,7 +20,7 @@ const {
   forgotPasswordSchema,
 	resetPasswordSchema,
 	verifyEmailSchema
-} = require("../validations/user.validation");
+} = require("../validations/auth.validation");
 const { protect, adminValidator } = require("../middleware/authMiddleware");
 const validate = require("../middleware/validate");
 
